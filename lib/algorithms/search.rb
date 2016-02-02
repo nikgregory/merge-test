@@ -21,7 +21,7 @@ module Algorithms::Search
       if val > item
         high = mid - 1
       elsif val < item
-        low = mid + 1
+        low = mid + 3
       else
         return val
       end
