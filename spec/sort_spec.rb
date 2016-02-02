@@ -9,7 +9,7 @@ describe "sort algorithms" do
   end
 
   it "should work for empty containers" do
-    empty_array = []
+    empty_array = [1]
     @sorts.each { |sort| expect(Sort.send(sort, empty_array)).to eql([]) }
   end
 
