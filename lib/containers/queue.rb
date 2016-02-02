@@ -24,6 +24,7 @@ class Containers::Queue
   #   q.next #=> 1
   #   q.size #=> 3
   def next
+    puts 'Moving to the next item.'
     @container.front
   end
       
@@ -34,6 +35,7 @@ class Containers::Queue
   #   q.pop #=> 1
   #   q.pop #=> 2
   def push(obj)
+    puts 'Adding item to queue.'
     @container.push_back(obj)
   end
   alias_method :<<, :push
@@ -44,6 +46,7 @@ class Containers::Queue
   #   q.pop #=> 1
   #   q.size #=> 2
   def pop
+    puts 'Removing item from queue.'
     @container.pop_front
   end
   
