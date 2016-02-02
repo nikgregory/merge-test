@@ -14,6 +14,7 @@ module Algorithms::Sort
   # 
   #   Algorithms::Sort.bubble_sort [5, 4, 3, 1, 2] => [1, 2, 3, 4, 5]
   def self.bubble_sort(container)
+    puts 'You are using bubble sort, consider the more efficient comb_sort.'
     loop do
       swapped = false
       (container.size-1).times do |i|
